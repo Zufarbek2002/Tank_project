@@ -7,7 +7,7 @@ import img1 from "../../assets/tank300Img-1.png"
 const Tank300 = () => {
   return (
     <div className="bg-[#1C2121]">
-      <div className="container mx-auto px-4 py-20 flex flex-col gap-7">
+      <div className="container mx-auto xl:px-20 px-4 py-20 flex flex-col gap-7">
         <div className="grid grid-cols-1  md:grid-rows-1 md:grid-cols-3">
           <div className="md:col-span-1 flex flex-col gap-10">
             <div className="text-white">

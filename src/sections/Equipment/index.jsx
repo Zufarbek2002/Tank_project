@@ -3,9 +3,11 @@ import { Button } from "../../components/Button";
 const Equipment = () => {
   return (
     <div className="bg-[url('/src/assets/equipment-bg-2.png')] sm:bg-[url('/src/assets/equipment-img.png')] bg-center bg-no-repeat bg-cover">
-      <div className="container mx-auto px-4 text-white flex flex-col gap-10 pt-[40px] sm:pt-[79px] pb-[207px] sm:pb-[56px]">
+      <div className="container mx-auto xl:px-20 px-4 text-white flex flex-col gap-10 pt-[40px] sm:pt-[79px] pb-[207px] sm:pb-[56px]">
         <div className="sm:w-[320px] flex flex-col gap-2">
-          <h2 className="font-bold text-2xl sm:text-4xl">Оставьте заявку на кредит</h2>
+          <h2 className="font-bold text-2xl sm:text-4xl">
+            Оставьте заявку на кредит
+          </h2>
           <p className="font-light text-lg">и получите одобрение за 1 день!</p>
         </div>
 

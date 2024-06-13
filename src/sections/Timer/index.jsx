@@ -7,7 +7,7 @@ import tank500 from '../../assets/tank500mini.png'
 const Timer = () => {
   return (
     <div className="bg-main-bg">
-      <div className="container mx-auto px-4 text-white py-14">
+      <div className="container mx-auto xl:px-20 px-4 text-white py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-14 pb-24">
           <div className="flex gap-5 border border-[#939697] py-5 px-3 rounded-[10px]">
             <div className="">

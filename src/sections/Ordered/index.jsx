@@ -10,7 +10,7 @@ const Ordered = () => {
   };
   return (
     <div className="bg-main-bg">
-      <div className="container mx-auto px-4 py-24 text-white flex flex-col gap-10">
+      <div className="container mx-auto xl:px-20 px-4 py-24 text-white flex flex-col gap-10">
         <h2 className="font-bold text-2xl sm:text-4xl text-center">
           ПОДБЕРИТЕ КОМПЛЕКТАЦИЮ
         </h2>
