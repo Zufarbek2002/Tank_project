@@ -10,9 +10,6 @@ export default {
         'main-bg': "#181818",
         'main-color': "#FF9549",
       },
-      backgroundImage: {
-        'hero-img': "url('./src/assets/hero-bg-img.png')"
-      }
     },
   },
   plugins: [],

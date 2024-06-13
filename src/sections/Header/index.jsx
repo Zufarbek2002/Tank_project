@@ -16,7 +16,7 @@ const Header = () => {
   };
   return (
     <div className="bg-main-bg">
-      <div className="container mx-auto py-4 px-4 flex gap-[10px] sm:gap-4 lg:gap-8 items-center">
+      <div className="container mx-auto py-4 px-10 flex gap-[10px] sm:gap-4 lg:gap-8 items-center">
         <div className="w-[31px] sm:w-[54px] h-[40px] sm:h-[70px]">
           <img src={logo} alt="logo" />
         </div>
