@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="sm:hidden w-full mb-5">
         <img src={heroImg} alt="background img" className="w-full" />
       </div>
-      <div className="container sm:h-screen mx-auto px-4 flex flex-col gap-10 justify-center">
+      <div className="container sm:h-screen mx-auto xl:px-20 px-4 flex flex-col gap-10 justify-center">
         <div className="text-white text-[18px] sm:text-[28px] font-medium">
           <h3 className="">Улучшим любые условия</h3>
           <h2 className="font-bold text-4xl sm:text-6xl">TANK 500</h2>
