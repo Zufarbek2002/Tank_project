@@ -16,7 +16,7 @@ const Header = () => {
   };
   return (
     <div className="bg-main-bg">
-      <div className="container mx-auto py-4 xl:px-20 px-4 flex gap-[10px] sm:gap-4 lg:gap-8 items-center">
+      <div className="fixed bg-main-bg z-10 container mx-auto py-4 xl:px-20 px-4 flex gap-[10px] sm:gap-4 lg:gap-8 items-center">
         <div className="w-[31px] sm:w-[54px] h-[40px] sm:h-[70px]">
           <img src={logo} alt="logo" />
         </div>
@@ -64,7 +64,7 @@ const Header = () => {
               </div>
               <a
                 href="tel:+79999999999"
-                className="flex items-center justify-center gap-2 bg-main-color text-main-bg rounded-lg w-44 text-sm font-medium"
+                className="flex items-center justify-center gap-2 bg-main-color text-main-bg rounded-lg w-44 text-sm font-medium border border-main-color hover:bg-transparent hover:text-white"
               >
                 <BsTelephoneInbound />
                 Заказать звонок
@@ -80,6 +80,7 @@ const Header = () => {
             </div>
           </div>
         </div>
+
         {/* Modal */}
         <div
           className={`w-screen h-screen bg-main-bg fixed top-[72px] right-0 sm:hidden px-[15px] pt-10 text-white  ${
@@ -88,7 +89,7 @@ const Header = () => {
               : "translate-x-[100%] transition-all duration-300"
           }`}
         >
-          <div className="h-[430px] overflow-y-scroll flex flex-col gap-y-10 pb-3 no-scrollbar">
+          <div className=" px-4 overflow-y-scroll flex flex-col gap-y-10 pb-3 no-scrollbar">
             <div className="">
               <h2 className="font-bold text-xl">
                 АВТОРУСЬ TANK Лосиный Остров

@@ -6,8 +6,8 @@ import { Button } from './Button';
 const Maps = () => {
   return (
     <div className="relative">
-      <div className="hidden md:block h-[451px] ">
-        <img src={map} alt="map img" className="h-full" />
+      <div className="hidden md:block w-full h-[451px] ">
+        <img src={map} alt="map img" className="h-full w-full" />
       </div>
       <div className="block md:hidden h-[345px] w-full">
         <img src={map2} alt="map img" className="h-full w-full" />

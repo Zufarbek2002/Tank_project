@@ -1,5 +1,7 @@
+import ContactFooter from "../../components/ContactFooter";
 import Disclaimer from "../../components/Disclaimer"
 import ForClient from "../../components/ForClient"
+import LastFooter from "../../components/LastFooter";
 import Maps from "../../components/Maps"
 
 const Footer = () => {
@@ -10,6 +12,8 @@ const Footer = () => {
         <Maps />
         <div className="pt-40 sm:pt-16 md:pt-14 lg:pt-0">
           <Disclaimer />
+          <ContactFooter />
+          <LastFooter />
         </div>
       </div>
     </div>

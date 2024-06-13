@@ -1,16 +1,79 @@
 import { FiAlertTriangle } from "react-icons/fi";
 import { Button, ButtonOutline } from "../../components/Button";
-import tank500 from "../../assets/tank500.png";
+import tank1 from "../../assets/Tank500/tank500.png";
+import tank2 from "../../assets/Tank500/tank500-2.png";
+import tank3 from "../../assets/Tank500/tank500-3.png";
+import tank4 from "../../assets/Tank500/tank500-4.png";
 import icon1 from "../../assets/tank300Icon-1.svg";
 import img1 from "../../assets/tank500Img-1.png";
+import { useState } from "react";
 
 const Tank500 = () => {
+   const [select, setSelect] = useState(true);
+   const [select2, setSelect2] = useState(false);
+   const [select3, setSelect3] = useState(false);
+   const [select4, setSelect4] = useState(false);
+
+   const hadleSelect = () => {
+     setSelect(true);
+     setSelect2(false);
+     setSelect3(false);
+     setSelect4(false);
+   };
+   const hadleSelect2 = () => {
+     setSelect(false);
+     setSelect2(true);
+     setSelect3(false);
+     setSelect4(false);
+   };
+   const hadleSelect3 = () => {
+     setSelect(false);
+     setSelect2(false);
+     setSelect3(true);
+     setSelect4(false);
+   };
+   const hadleSelect4 = () => {
+     setSelect(false);
+     setSelect2(false);
+     setSelect3(false);
+     setSelect4(true);
+   };
+
   return (
     <div className="bg-[#1C2121]">
       <div className="container mx-auto xl:px-20 px-4 py-20 flex flex-col gap-7">
         <div className="grid grid-cols-1  md:grid-rows-1 md:grid-cols-3">
-          <div className="md:col-span-2 row-start-1 md:row-start-auto">
-            <img src={tank500} alt="tank 500" />
+          <div className="md:col-span-2 row-start-1 md:row-start-auto flex items-center">
+            <div className="flex flex-col gap-2">
+              <button
+                onClick={hadleSelect}
+                className="bg-[#B0A798] w-[30px] h-[30px] rounded-full cursor-pointer text-white text-xl text-center"
+              >
+                {select && "✓"}
+              </button>
+              <button
+                onClick={hadleSelect2}
+                className="bg-[#E6E7E8] w-[30px] h-[30px] rounded-full cursor-pointer text-black text-xl text-center"
+              >
+                {select2 && "✓"}
+              </button>
+              <button
+                onClick={hadleSelect3}
+                className="bg-[#A2A4AB] w-[30px] h-[30px] rounded-full cursor-pointer text-black text-xl text-center"
+              >
+                {select3 && "✓"}
+              </button>
+              <button
+                onClick={hadleSelect4}
+                className="bg-[#212329] w-[30px] h-[30px] rounded-full cursor-pointer border border-[#939697] text-white text-xl text-center"
+              >
+                {select4 && "✓"}
+              </button>
+            </div>
+            {select && <img src={tank1} alt="tank 300" />}
+            {select2 && <img src={tank2} alt="tank 300" />}
+            {select3 && <img src={tank3} alt="tank 300" />}
+            {select4 && <img src={tank4} alt="tank 300" />}
           </div>
 
           <div className="md:col-span-1 flex flex-col gap-10">

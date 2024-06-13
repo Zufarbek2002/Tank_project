@@ -78,7 +78,9 @@ const Ordered = () => {
             <h2 className="font-bold text-2xl md:text-4xl">
               ОБМЕН ПО TRADE-IN НА ВЫГОДНЫХ УСЛОВИЯХ
             </h2>
-            <Button>Отправить заявку</Button>
+            <div className="w-full sm:max-w-[207px]">
+              <Button>Отправить заявку</Button>
+            </div>
           </div>
         </div>
       </div>
